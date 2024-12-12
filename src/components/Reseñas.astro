@@ -1,0 +1,78 @@
+---
+import Star from "../../public/icons/Star.astro";
+import StarGrande from "../../public/icons/StarGrande.astro";
+import Comentario from "./Comentario.astro";
+import ImagenComentario1 from "../../public/imagencomentario1.jpg"
+import ImagenComentario2 from "../../public/imagencomentario2.jpg"
+import ImagenComentario3 from "../../public/imagencomentario3.jpg"
+import StarCom from '../../public/icons/StarCom.astro';
+
+
+const Comentario1 = { imagen : ImagenComentario1 ,
+                    Descripcion:'Camara en la caja',
+                    Nombre:'Roberto M',
+                    Fecha: '10/12/24',
+                    Comentarios: '¡Entrega rápida! Me llegó al día siguiente, ¡gracias!',
+}
+
+const Comentario2 = { imagen : ImagenComentario2 ,
+                    Descripcion:'Local',
+                    Nombre:'Agustín F',
+                    Fecha: '10/12/24',
+                    Comentarios: '¡Entrega rápidBuen Flash Llego rápido y tiene un tremendo flash; quité un foco que tenía y con la luz de la cámara es ya esta.a! Me llegó al día siguiente, ¡gracias!',
+}
+
+const Comentario3 = { imagen : ImagenComentario3 ,
+                    Descripcion:'Camara Colocada',
+                    Nombre:'Lorena H',
+                    Fecha: '10/12/24',
+                    Comentarios: 'La cámara llegó rápido y tiene una buena visión en la noche, ¡muy satisfecha!',
+}
+
+--- 
+
+
+<section >
+   <div>
+    <main class="flex py-16 md:px-[240px]">
+        <article class=" grid justify-items-center md:justify-items-start text-white   md:px-16">
+        <div class="flex items-center">
+        <span><StarGrande/></span>
+        <h3 class="text-4xl md:text-7xl">4.5</h3>
+        </div>
+        <p class="ml-4 text-lg">3 Reseñas</p>
+        </article>  
+         
+        <aside class="grid py-8 gap-4">
+            <span class="flex items-center text gap-4">
+                <span class="flex"><Star/><Star/><Star/><Star/><Star/></span>
+                <div class="w-28 h-4 bg-[#38383D] rounded-full">
+                    <div class="w-24 h-full bg-[#E1FD6F] rounded-full "></div>
+                     </div>
+                     <p class="text-white text-lg -mt-1">(2)</p>
+            </span>
+            
+            <span class="flex items-center gap-4">  
+            <span class="flex mr-6"><Star/><Star/><Star/><Star/></span>
+            <div class="w-28 h-4 bg-[#38383D] rounded-full">
+               <div class="w-16 h-full bg-[#E1FD6F] rounded-full "></div>
+                </div>
+                <p class="text-white text-lg -mt-1">(1)</p>
+            </span>
+
+           <!--  <span class="flex items-center gap-4">  
+                <span class="flex"><Star/><Star/><Star/></span>
+                <div class="w-44 h-4 bg-[#38383D] rounded-full">
+                   <div class="w-16 h-full bg-[#E1FD6F] rounded-full "></div>
+                    </div>
+                    <p class="text-white text-lg -mt-1">(1)</p>
+                </span> -->
+        </aside>
+   </main>
+   </div>
+   <article class="grid md:flex justify-center gap-8">
+       <Comentario {...Comentario1}><StarCom/><StarCom/><StarCom/><StarCom/><StarCom/></Comentario>
+       <Comentario {...Comentario2}><StarCom/><StarCom/><StarCom/><StarCom/><StarCom/></Comentario>
+       <Comentario {...Comentario3}><StarCom/><StarCom/><StarCom/><StarCom/></Comentario>
+</article>
+</section>

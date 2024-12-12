@@ -1,0 +1,87 @@
+---
+import Down from "../../public/icons/Down.astro"
+---
+
+  <main>
+    <ul id="Acordion">
+
+        <li class="md:w-[500px] ">
+            <label class="cursor-pointer flex justify-between items-center w-full text-white text-2xl font-semibold" for="Primero">¿Es difícil de instalar? <span><Down/></span></label>
+            <input type="radio" name="acordion" id="Primero">
+            <div class="Contenido">
+                <p class="text-white">No, la instalación es muy sencilla. Solo necesitas descargar la aplicación y seguir los pasos indicados. Además, nuestro equipo está disponible para asistirte durante el proceso de instalación.
+                </p>
+            </div>
+            <hr>
+        </li>
+
+
+        <li class="md:w-[500px] ">
+            <label class="cursor-pointer flex justify-between items-center w-full text-white text-2xl font-semibold" for="Segundo">¿Es a prueba de agua? <span><Down/></span></label>
+            <input type="radio" name="acordion" id="Segundo" >
+            <div class="Contenido">
+                <p class="text-white">Sí, la cámara es completamente a prueba de agua, incluso contra la lluvia y el granizo, gracias a su tecnología IP66.
+                </p>
+            </div>
+            <hr>
+        </li>
+
+        <li class="md:w-[500px]">
+            <label class=" cursor-pointer flex justify-between items-center w-full text-white text-2xl font-semibold" for="Tercero">¿Qué métodos de pago aceptan?<span><Down/></span></label>
+            <input type="radio" name="acordion" id="Tercero" >
+            <div class="Contenido">
+                <p class="text-white">Aceptamos efectivo, tarjetas de débito y crédito a través de Mercado Pago, así como transferencias bancarias.
+                </p>
+            </div>
+            <hr>
+        </li>
+
+        <li class="md:w-[500px]">
+            <label class=" cursor-pointer flex justify-between items-center w-full text-white text-2xl font-semibold" for="Cuarto">¿Qué garantía tiene? <span><Down/></span></label>
+            <input type="radio" name="acordion" id="Cuarto" >
+            <div class="Contenido">
+                <p class="text-white">La cámara cuenta con una garantía de 6 meses.</p>
+            </div>
+            <hr>
+        </li>
+
+        <li class="md:w-[500px] ">
+            <label class="cursor-pointer flex justify-between items-center w-full text-white text-2xl font-semibold" for="Quinto">¿Puedo mover la cámara desde mi celular? <span><Down/></span></label>
+            <input type="radio" name="acordion" id="Quinto" >
+            <div class="Contenido">
+                <p class="text-white">Sí, puedes ver, mover, escuchar y hablar a través de la cámara desde cualquier lugar utilizando tu celular.
+                </p>
+            </div>
+            <hr>
+        </li>
+
+        <li class="md:w-[500px] ">
+            <label class="cursor-pointer flex justify-between items-center w-full text-white text-2xl font-semibold" for="Sexto">¿Cómo hago para comprar? <span><Down/></span></label>
+            <input type="radio" name="acordion" id="Sexto" >
+            <div class="Contenido">
+                <p class="text-white">Si no estás seguro de cómo comprar, puedes comunicarte con nuestro equipo de atención al cliente, quienes te guiarán en el proceso.
+                </p>
+            </div>
+            <hr>
+        </li>
+
+    </ul>
+  </main>
+  <style>
+    #Acordion label + input[type="radio"]{
+        display: none;
+    }
+
+    #Acordion .Contenido{
+        padding: 0 10px;
+        line-height: 24px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height .5s;
+    }
+
+    #Acordion label + input[type="radio"]:checked 
+    + .Contenido {
+        max-height: 300px;
+    }
+  </style>

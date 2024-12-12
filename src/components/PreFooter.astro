@@ -1,0 +1,35 @@
+---
+import TruckFooter from "../../public/icons/TruckFooter.astro";
+import HS from "../../public/icons/24hs.astro";
+import Grade from "../../public/icons/Grade.astro";
+import CheckMarket from "../../public/icons/Checkmarket.astro";
+---
+
+<section class="py-32">
+<main class="md:flex justify-evenly h-auto w-full bg-[#e1fd6f] p-4 snap-x ">
+    <div class="grid justify-items-center">
+        <TruckFooter/>
+        <h5 class="font-semibold text-xl">Envíos A Todo el Uruguay</h5>
+        <p>Entrega de <strong>24-72 HS</strong></p>
+    </div >
+   
+    <div  class="grid justify-items-center ">
+        <HS/>
+        <h5 class="font-semibold text-xl mt-4">Seguridad 24HS </h5>
+        <p class="w-36 text-center">Calidad de imagen las
+            <strong>24HS del dia</strong></p>
+    </div >
+
+    <div class="grid justify-items-center">
+        <Grade/>
+        <h5 class="font-semibold text-xl">Vigilancia 360°</h5>
+        <p>Seguridad, control y visión integral.</p>
+    </div>
+
+    <div class="grid justify-items-center">
+        <CheckMarket/>
+        <h5 class="font-semibold text-xl">6 MESES DE GARANTÍA</h5>
+        <p>Garantía sin preocupaciones.</p>
+    </div>
+</main>
+</section>

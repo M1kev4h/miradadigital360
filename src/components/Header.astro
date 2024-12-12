@@ -1,0 +1,47 @@
+---
+import ImagenBF from "../../public/EtiquetaBF.webp"
+import { Image } from 'astro:assets';
+---
+
+<section class="z-50 sticky top-0">
+    <Image class="size-14 absolute lg:size-32"  src={ImagenBF} alt="etiqueta de blackfraidy"/>
+    
+    <main class="bg-[#e1fd6f] grid 
+    w-full h-[1fr] 
+    ">
+    <article class="flex-nowrap py-4 
+    lg:flex 
+    lg:justify-center
+    lg:gap-10">
+    
+        <h4 class="text-[15px] text-center text[#1d1d1d] font-bold mb-2
+        lg:text-[37px]">¡CAMARAS INTELIGENTES!LA MEJOR OFERTA DEL AÑO 38% OFF!
+        </h4>
+        <div class="flex justify-center text-[30px] font-bold gap-3">
+            <div class="mt-1">
+                <h4 class=" text-5xl grid justify-items-center leading-10">00 <span class="text-xs font-light">Dias</span> </h4>
+            </div>
+            <span>:</span>
+            <div class="mt-1">
+                <h4 class=" text-5xl grid justify-items-center leading-10">00 <span class="text-xs font-light">Horas</span> </h4>
+            </div>
+            <span>:</span>
+            <div class="mt-1">
+                <h4 class=" text-5xl grid justify-items-center leading-10">00 <span class="text-xs font-light">Minutos</span> </h4>
+            </div>
+            <span>:</span>
+            <div class="mt-1">
+                <h4 class=" text-5xl grid justify-items-center leading-10">00 <span class="text-xs font-light">Segundos</span> </h4>
+            </div>
+        </div>
+        
+    </article>
+</main>
+
+</section>
+
+<style>
+    section{
+        font-family:'Squada One',sans-serif;
+    }
+</style>

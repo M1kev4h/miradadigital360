@@ -1,0 +1,18 @@
+---
+import Card from "./Card.astro";
+const cardData1 = { title: 'Monitoreo en Tiempo Real 📱👀', description: 'Mantente conectado con tu hogar desde cualquier lugar, recibiendo alertas y notificaciones instantáneas.', videoSrc: './public/Videos/Video1.mp4'};
+
+const cardData2 = { title: 'Cámara Infrarroja y LED ', description: 'Con tecnología de infrarrojos y una potente lus LED .No te pierdas ningún detalle.', videoSrc: './public/Videos/Video2.mp4'};
+
+const cardData3 = { title: 'Doble Lente 🔍📷', description: 'Equipado con dos cámaras en una, una móvil de 360° y una fija, para una cobertura completa.', videoSrc: './public/Videos/Video3.mp4'};
+
+const cardData4 = { title: 'Protección Integral 💪💰', description: 'No solo protege tu casa, sino también tus ahorros y bienes más preciados.', videoSrc: './public/Videos/Video4.mp4'};
+
+const cardData5 = { title: 'Resistente a Climas Extremos ☔🌞', description: 'Diseñada para soportar diversas condiciones climáticas, asegurando su funcionamiento duradero.', videoSrc: './public/Videos/Video5.mp4'};
+
+---
+<Card {...cardData1}/>
+<Card  {...cardData2}/>
+<Card  {...cardData3}/>
+<Card  {...cardData4}/>
+<Card  {...cardData5}/>
